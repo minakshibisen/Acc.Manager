@@ -29,4 +29,5 @@ fun ReportScreen (navController: NavController){
             modifier = Modifier.padding(start = 16.dp, bottom = 16.dp)
         )
 }
+
 }

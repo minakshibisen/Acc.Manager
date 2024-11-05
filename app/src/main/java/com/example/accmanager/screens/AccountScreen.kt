@@ -87,6 +87,7 @@ fun AccountScreen(navController: NavController) {
         }
     }
 }
+
 @Composable
 fun FAB(onFabClick: () -> Unit) {
     FloatingActionButton(
@@ -136,6 +137,7 @@ fun SearchBar(
         keyboardActions = KeyboardActions(onSearch = { onSearch() })
     )
 }
+
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun AddAccountDialog(onClose: () -> Unit, onAddAccount: (String) -> Unit) {
@@ -214,6 +216,7 @@ fun AddAccountDialog(onClose: () -> Unit, onAddAccount: (String) -> Unit) {
         dismissButton = {}
     )
 }
+
 @Composable
 fun SuggestionChip(text: String) {
     Surface(
@@ -226,6 +229,7 @@ fun SuggestionChip(text: String) {
         )
     }
 }
+
 @Composable
 fun AccountCard(accountName: String) {
     val context = LocalContext.current

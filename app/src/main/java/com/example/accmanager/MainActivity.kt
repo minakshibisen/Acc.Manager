@@ -1,6 +1,5 @@
 package com.example.accmanager
 
-import LoginScreen
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity

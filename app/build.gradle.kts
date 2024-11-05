@@ -76,9 +76,9 @@ dependencies {
     val nav_version = "2.8.1"
 
     implementation(libs.androidx.navigation.compose.v281)
-    implementation("androidx.compose.material:material:1.7.2")
+    implementation(libs.androidx.material)
 
-    implementation ("com.google.android.gms:play-services-auth:19.2.0") // Or your required service
+    implementation (libs.play.services.auth) // Or your required service
 
     // Hilt
     implementation(libs.hilt.android)
