@@ -1,5 +1,6 @@
 package com.example.accmanager
 
+import LoginScreen
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -23,6 +24,8 @@ import com.example.accmanager.screens.SettingScreen
 import com.example.accmanager.ui.theme.AccManagerTheme
 
 sealed class DestinationScreens(val route: String) {
+    object Login:DestinationScreens("login")
+    object Register:DestinationScreens("register")
     object Account : DestinationScreens("account")
     object Setting : DestinationScreens("setting")
     object Report : DestinationScreens("report")
@@ -73,7 +76,12 @@ class MainActivity : ComponentActivity() {
                 composable(DestinationScreens.Report.route) {
                     ReportScreen(navController)
                 }
+                composable(DestinationScreens.Login.route) {
+                    //LoginScreen(navController=navController)
+                }
             }
         }
     }
+
+
 }
